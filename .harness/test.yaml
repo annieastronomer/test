@@ -111,7 +111,7 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: astro
+      value: /harness
     - name: ASTRO_DEPLOYMENT_ID
       type: String
       description: ""
