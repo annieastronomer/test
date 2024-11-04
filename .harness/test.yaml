@@ -61,7 +61,8 @@ pipeline:
                       # Step 4: Push image
                       echo -e "\nPushing Docker image $REPOSITORY:$TAG to $DEPLOYMENT_ID"
                       docker push $REPOSITORY:$TAG
-                      # Step 5: Create tar file
+                      # Step 5: Create tar file 
+                      pwd
                       echo -e "\nCreating a dags tar file from $ASTRO_PROJECT_PATH/dags and stored in $ASTRO_PROJECT_PATH/dags.tar\n"
                       cd $ASTRO_PROJECT_PATH
                       tar -cvf "$ASTRO_PROJECT_PATH/dags.tar" "dags"
